@@ -1,0 +1,37 @@
+#this is my pythobn lucky draw file
+import random
+
+print("welcome to casino")
+
+name = input("enter your name-->")
+
+print("hello"+"."+ name)
+
+print("RULES")
+
+rules = ['If You Win The Amount Will Be Double','If You Lose All Money Will Be Taken','The Amount Should Will Above 5oo'
+             ,'The Picking Of Numbers Is Completely Random']
+for r in rules:
+    print(r)
+
+money = int(input("Enter The Amount..-->"))
+
+
+
+numbers = ['1','1','2','2']
+number = random.choice(numbers)
+print(number)
+
+
+number1 = random.choice(numbers)
+print(number1)
+
+
+number2 = random.choice(numbers)
+print(number2)
+
+win = money * 2
+if number == number1 == number2:
+    print("YOU WON" + "$" + int(win))
+else:
+    print("you loose" + str(money) )
